@@ -1,0 +1,16 @@
+.active {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+.notactive {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #757575;
+}
