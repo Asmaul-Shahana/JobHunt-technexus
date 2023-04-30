@@ -1,9 +1,19 @@
 import React from 'react';
+import banner from '../../assets/all_images/banner.png';
 
 const Home = () => {
     return (
-        <div>
-            <h2>Home</h2>
+        <div className='backgroundcolor px-28 pt-12'>
+            <div className='flex justify-between items-center gap-8 pt-6'>
+            <div className='w-1/2'>
+                <h1 className='font-bold text-6xl pb-5'>One Step Closer To Your <span className='active'>Dream Job</span></h1>
+                <p className='text-[#757575] pb-5'>From thousands of renowned tech companies, grab your dream job opportunity today. We provide all the information you need. You work hard. We work to manage all your job applications.</p>
+                <button className='flex flex-start gap-3 text-white font-semibold bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-4 py-3 rounded-lg'>Get started</button>
+            </div>
+            <div className='w-1/2'>
+                <img className='' src={banner} alt="banner-img" />
+            </div>
+        </div>
         </div>
     );
 };
