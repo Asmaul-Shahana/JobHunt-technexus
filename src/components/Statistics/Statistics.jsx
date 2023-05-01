@@ -42,8 +42,8 @@ const Statistics = () => {
 
     return (
         <div>
-            <div className='bg-img md:h-56'>
-                <h2 className='font-bold text-3xl text-center py-14'>Statistics</h2>
+            <div className='bg-img md:h-56 flex justify-center items-center'>
+                <h2 className='font-bold text-3xl text-center'>Statistics</h2>
             </div>
             <div>
                 <RadarChart

@@ -11,7 +11,7 @@ const Header = () => {
                 <ActiveLink to="/">Home</ActiveLink>
                 <ActiveLink to="/statistics">Statistics</ActiveLink>
                 <ActiveLink to="/jobs">Applied Jobs</ActiveLink>
-                <ActiveLink to="/blogs">Blogs</ActiveLink>
+                <ActiveLink to="/blogs">Blog</ActiveLink>
             </div>
             <button className='flex flex-start gap-3 text-white font-semibold bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-4 py-3 rounded-lg
 '>Start Applying</button>
