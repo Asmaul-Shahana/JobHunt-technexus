@@ -1,10 +1,12 @@
 import React from 'react';
 import frame4 from '../../assets/icons/Frame-4.png';
 import frame from '../../assets/icons/Frame.png';
+import { Link } from 'react-router-dom';
 
 
 const FeaturedJob = ({ featuredJob }) => {
     const { id, jobTitle, logo, companyName, location, salaryRange, jobType } = featuredJob;
+    
     return (
         <div className='border border-[#E8E8E8] rounded-lg p-7'>
             <img style={{ objectFit: 'contain', height: '90px', width: '160px' }} src={logo} alt="" />
@@ -24,7 +26,7 @@ const FeaturedJob = ({ featuredJob }) => {
                     <p>{salaryRange}</p>
                 </div>
             </div>
-            <button className='flex flex-start gap-3 text-white font-semibold bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-4 py-3 rounded-lg'>View Details</button>
+            <Link to={`/job/${id}`}><button className='flex flex-start gap-3 text-white font-semibold bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-4 py-3 rounded-lg'>View Details</button></Link>
         </div>
     );
 };
