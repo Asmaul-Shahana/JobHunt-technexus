@@ -12,6 +12,7 @@ import Home from './components/Home/Home.jsx';
 import Statistics from './components/Statistics/Statistics.jsx';
 import Jobs from './components/Jobs/Jobs.jsx';
 import Blogs from './components/Blogs/Blogs.jsx';
+import Errorpage from './components/Errorpage/Errorpage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "blogs",
         element: <Blogs></Blogs>
+      },
+      {
+        path: '*',
+        element: <Errorpage></Errorpage>
       }
     ]
   },
