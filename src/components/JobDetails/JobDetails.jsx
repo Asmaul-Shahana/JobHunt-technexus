@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import jobData from '../../../public/jobs.json';
 import frame4 from '../../assets/icons/Frame-4.png';
@@ -6,13 +6,34 @@ import frame from '../../assets/icons/Frame.png';
 import calender from '../../assets/icons/Frame-1.png';
 import frame2 from '../../assets/icons/Frame-2.png';
 import frame3 from '../../assets/icons/Frame-3.png';
+import { saveArrayToLocalStorage } from '../../utilities/fakedb';
 
 const JobDetails = () => {
     const { id } = useParams();
     const job = jobData.find(job => job.id === parseInt(id));
 
     const { jobTitle, salaryRange, jobDescription, jobResponsibilities, experienceRequirements, educationalRequirements, location, phone, email } = job;
-    console.log(job);
+    // console.log(job);
+
+    const [addJob, setAddJob] = useState([]);
+    
+    
+    const handleApplyNow = (job) =>{
+        let newJob = [];
+        const exists = addJob.find(jb => jb.id === id)
+        if(!exists)
+        {
+            newJob = [...addJob, job];
+        }
+        else{
+            // const remaining = addJob.filter(jb => jb.id!== id);
+            // newJob = [...remaining, exists];
+            alert('exisits');
+            return;
+        }
+        setAddJob(newJob);
+        saveArrayToLocalStorage(newJob);
+    }
 
     return (
         <div>
@@ -56,8 +77,7 @@ const JobDetails = () => {
                         </div>
                     </div>
                     <div>
-                        <button className='w-full
- gap-3 text-white font-semibold bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-4 py-3 mt-4 rounded-lg'>Apply Now</button>
+                        <button onClick={ () => {handleApplyNow(job)}} className='w-full gap-3 text-white font-semibold bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-4 py-3 mt-4 rounded-lg'>Apply Now</button>
                     </div>
                 </div>
             </div>

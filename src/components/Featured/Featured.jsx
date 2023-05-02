@@ -4,7 +4,7 @@ import FeaturedJob from '../FeaturedJob/FeaturedJob';
 
 const Featured = () => {
     const featuredJobs = useLoaderData();
-    console.log(featuredJobs);
+    // console.log(featuredJobs);
     return (
         <div className='px-28 pt-24'>
             <h3 className='font-bold text-4xl pb-3 text-center'>Featured Jobs</h3>

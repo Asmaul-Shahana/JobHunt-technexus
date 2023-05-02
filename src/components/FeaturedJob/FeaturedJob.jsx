@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import frame4 from '../../assets/icons/Frame-4.png';
 import frame from '../../assets/icons/Frame.png';
 import { Link } from 'react-router-dom';
@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 
 const FeaturedJob = ({ featuredJob }) => {
     const { id, jobTitle, logo, companyName, location, salaryRange, jobType } = featuredJob;
+
+    
     
     return (
         <div className='border border-[#E8E8E8] rounded-lg p-7'>

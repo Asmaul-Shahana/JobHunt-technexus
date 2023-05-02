@@ -14,6 +14,7 @@ import Jobs from './components/Jobs/Jobs.jsx';
 import Blogs from './components/Blogs/Blogs.jsx';
 import Errorpage from './components/Errorpage/Errorpage.jsx';
 import JobDetails from './components/JobDetails/JobDetails.jsx';
+import { getJobFromLocalStorage } from './utilities/fakedb.js';
 
 const router = createBrowserRouter([
   {
@@ -31,13 +32,12 @@ const router = createBrowserRouter([
       },
       {
         path: "jobs",
-        element: <Jobs></Jobs>
+        element: <Jobs></Jobs>,
+        loader: getJobFromLocalStorage
       },
       {
         path: "/job/:id",
-        element: <JobDetails />,
-        // loader: ({ params }) => fetch(`jobs.json/${params.id}`)
-        // loader: async ({ params }) => fetch(`jobs.json/${params.id}`)
+        element: <JobDetails />
       },
       {
         path: "blogs",
