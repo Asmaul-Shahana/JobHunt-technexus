@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom';
 const FeaturedJob = ({ featuredJob }) => {
     const { id, jobTitle, logo, companyName, location, salaryRange, jobType } = featuredJob;
 
-    
-    
     return (
         <div className='border border-[#E8E8E8] rounded-lg p-7'>
             <img style={{ objectFit: 'contain', height: '90px', width: '160px' }} src={logo} alt="" />
