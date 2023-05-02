@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import { NavLink } from 'react-router-dom';
 
 
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
     return (
         <div className='backgroundcolor px-6 py-6 md:px-28 md:pt-12'>
             <div className='md:flex justify-between items-center'>
-                <h2 className='font-bold text-2xl'>TechNexus</h2>
+                <a href="/" className='font-bold text-2xl'>TechNexus</a>
                 <nav>
                     <div onClick={() => setOpen(!open)} className='md:hidden'>
                         <span>
