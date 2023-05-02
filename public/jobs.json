@@ -10,7 +10,9 @@
         "jobDescription": "We are seeking a skilled software engineer to join our team and help us build innovative software products.",
         "jobResponsibilities": "Design and implement software applications; Collaborate with cross-functional teams to identify and solve software problems; Write clean, maintainable, and efficient code; Test and deploy software applications; Contribute to software documentation and maintain code quality",
         "educationalRequirements": "Bachelor's degree in Computer Science or a related field",
-        "experienceRequirements": "3+ years of experience in software development"
+        "experienceRequirements": "3+ years of experience in software development",
+        "phone": "555-5678", 
+        "email": "contact@google.com"
     },
     {
         "id": 2,
@@ -23,7 +25,9 @@
         "jobDescription": "We are seeking an experienced marketing manager to lead our marketing efforts and drive growth.",
         "jobResponsibilities": "Develop and implement marketing strategies; Manage and lead a team of marketing professionals; Collaborate with cross-functional teams to develop and execute marketing campaigns; Analyze and report on marketing campaign performance; Stay up-to-date with industry trends and best practices",
         "educationalRequirements": "Bachelor's degree in Marketing or a related field",
-        "experienceRequirements": "5+ years of experience in marketing"
+        "experienceRequirements": "5+ years of experience in marketing",
+        "phone": "555-1234", 
+        "email": "contact@tesla.com"
     },
     {
         "id": 3,
@@ -36,7 +40,9 @@
         "jobDescription": "We are seeking a talented data scientist to help us build predictive models and drive insights from our data.",
         "jobResponsibilities": "Design and develop machine learning models; Analyze and interpret complex data sets; Collaborate with cross-functional teams to identify opportunities for data-driven insights; Communicate findings to both technical and non-technical stakeholders; Stay up-to-date with advancements in machine learning and data science",
         "educationalRequirements": "Master's degree or PhD in Computer Science, Mathematics, or a related field",
-        "experienceRequirements": "3+ years of experience in data science or related field"
+        "experienceRequirements": "3+ years of experience in data science or related field",
+        "phone": "555-9012", 
+        "email": "contact@netflix.com"
     },
     {
         "id": 4,
@@ -49,7 +55,9 @@
         "jobDescription": "We are seeking a skilled graphic designer to create visual designs for our clients across various mediums.",
         "jobResponsibilities": "Design and create visual graphics for print and digital media; Collaborate with clients to understand their design needs and preferences; Present design concepts and incorporate feedback from clients and team members; Stay up-to-date with design trends and software; Create and maintain design style guides",
         "educationalRequirements": "Bachelor's degree in Graphic Design or a related field",
-        "experienceRequirements": "3+ years of experience in graphic design or related field"
+        "experienceRequirements": "3+ years of experience in graphic design or related field",
+        "phone": "555-3456", 
+        "email": "contact@facebook.com"
     },
     {
         "id": 5,
@@ -62,7 +70,9 @@
         "jobDescription": "We are seeking a talented front-end developer to build engaging and responsive web applications.",
         "jobResponsibilities": "Develop responsive and engaging web applications using HTML, CSS, and JavaScript; Collaborate with cross-functional teams",
         "educationalRequirements": "Bachelor's degree in Computer Science or a related field",
-        "experienceRequirements": "3+ years of experience in front-end development or related field"
+        "experienceRequirements": "3+ years of experience in front-end development or related field",
+        "phone": "555-3456", 
+        "email": "contact@samsung.com"
     },
     {
         "id": 6,
@@ -75,12 +85,14 @@
         "jobDescription": "We are seeking an experienced product manager to lead the development of new products and improve existing ones.",
         "jobResponsibilities": "Develop and implement product strategies and roadmaps; Conduct market research and analyze user feedback to inform product decisions; Collaborate with cross-functional teams to develop and launch new products; Define and track key product metrics; Conduct competitive analysis to stay informed of market trends and emerging technologies",
         "educationalRequirements": "Bachelor's degree in Business, Engineering, or a related field",
-        "experienceRequirements": "5+ years of experience in product management"
+        "experienceRequirements": "5+ years of experience in product management",
+        "phone": "555-7890", 
+        "email": "contact@airbnb.com"
     },
     {
         "id": 7,
         "jobTitle": "Human Resources Manager",
-        "companyName": "Global Corp",
+        "companyName": "Intel",
         "logo": "https://static.vecteezy.com/system/resources/previews/022/101/047/original/intel-logo-transparent-free-png.png",
         "jobType": ["Remote", "Full Time"],
         "location": "Washington, D.C.",
@@ -88,12 +100,14 @@
         "jobDescription": "We are seeking a human resources manager to lead the development and implementation of HR policies and programs.",
         "jobResponsibilities": "Develop and implement HR policies and procedures; Manage and lead a team of HR professionals; Conduct recruiting and hiring activities; Develop and implement training and development programs; Conduct employee performance evaluations and provide feedback; Develop and maintain employee benefit programs",
         "educationalRequirements": "Bachelor's degree in Human Resources or a related field",
-        "experienceRequirements": "5+ years of experience in HR management"
+        "experienceRequirements": "5+ years of experience in HR management",
+        "phone": "555-9854", 
+        "email": "contact@intel.com"
     },
     {
         "id": 8,
         "jobTitle": "Sales Representative",
-        "companyName": "Peak Sales Co.",
+        "companyName": "Apple Inc.",
         "logo": "https://cdn.freebiesupply.com/images/thumbs/2x/apple-logo.png",
         "jobType": ["Onsite", "Full Time"],
         "location": "Denver, CO",
@@ -101,6 +115,8 @@
         "jobDescription": "We are seeking a motivated sales representative to join our team and drive revenue growth.",
         "jobResponsibilities": "Identify and qualify leads; Conduct sales presentations and product demonstrations; Negotiate and close deals; Collaborate with internal teams to develop and execute sales strategies; Maintain a CRM system and provide regular sales reports",
         "educationalRequirements": "Bachelor's degree in Sales, Business, or a related field",
-        "experienceRequirements": "2+ years of experience in sales"
+        "experienceRequirements": "2+ years of experience in sales",
+        "phone": "555-0123", 
+        "email": "contact@apple.com"
     }
 ]
