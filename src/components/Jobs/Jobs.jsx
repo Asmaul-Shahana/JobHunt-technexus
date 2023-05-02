@@ -13,12 +13,14 @@ const Jobs = () => {
             <div className='bg-img md:h-56 flex justify-center items-center'>
                 <h2 className='font-bold text-3xl text-center'>Applied Job</h2>
                 </div>
+                <div className='flex flex-col gap-4 px-28 pt-24'>
                 {
                     savedJob.map(job => <Job
                     key={job.id}
                     job={job}
                     ></Job>)
                 }
+                </div>
         </div>
     );
 };

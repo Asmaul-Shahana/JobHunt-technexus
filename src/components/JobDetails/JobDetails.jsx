@@ -7,6 +7,7 @@ import calender from '../../assets/icons/Frame-1.png';
 import frame2 from '../../assets/icons/Frame-2.png';
 import frame3 from '../../assets/icons/Frame-3.png';
 import { saveArrayToLocalStorage } from '../../utilities/fakedb';
+import toast, { Toaster } from 'react-hot-toast';
 
 const JobDetails = () => {
     const { id } = useParams();
@@ -18,22 +19,19 @@ const JobDetails = () => {
     const [addJob, setAddJob] = useState([]);
     
     
-    const handleApplyNow = (job) =>{
-        let newJob = [];
-        const exists = addJob.find(jb => jb.id === id)
-        if(!exists)
-        {
-            newJob = [...addJob, job];
+    const handleApplyNow = (job) => {
+
+        // Check if the job has already been added
+        if (addJob.find(jb => jb.id === job.id)) {
+            toast('Already applied to this job!');
+          return;
         }
-        else{
-            // const remaining = addJob.filter(jb => jb.id!== id);
-            // newJob = [...remaining, exists];
-            alert('exisits');
-            return;
-        }
+        
+        let newJob = [...addJob, job];
         setAddJob(newJob);
         saveArrayToLocalStorage(newJob);
-    }
+      };
+      
 
     return (
         <div>
