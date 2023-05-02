@@ -18,7 +18,7 @@ const FeaturedJob = ({ featuredJob }) => {
                 <p className='active border-2 border-violet-200 rounded-md py-2 px-3'>{jobType[0]}</p>
                 <p className='active border-2 border-violet-200 rounded-md py-2 px-3'>{jobType[1]}</p>
             </div>
-            <div className='flex gap-4 text-[#757575] pt-3 pb-4'>
+            <div className='md:flex gap-4 text-[#757575] pt-3 pb-4'>
                 <div className='flex'>
                     <img src={frame4} alt="" />
                     <p>{location}</p>

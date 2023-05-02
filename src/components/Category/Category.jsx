@@ -12,7 +12,7 @@ const Category = () => {
     }, [])
 
     return (
-        <div className='px-28 pt-24'>
+        <div className='px-6 py-6 md:px-28 md:pt-24'>
             <h3 className='font-bold text-4xl pb-3 text-center'>Job Category List</h3>
             <p className='text-[#757575] pb-6 text-center'>Explore thousands of job opportunities with all the information you need.</p>
             <div className='grid md:grid-cols-4 gap-5'>
