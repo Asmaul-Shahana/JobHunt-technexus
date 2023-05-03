@@ -33,11 +33,12 @@ const Jobs = () => {
                         <option value='Onsite'>Onsite</option>
                     </select>
                 </div>
-
-                {filteredJobs.map(job => <Job
-                    key={job.id}
-                    job={job}
-                ></Job>)}
+                {
+                    filteredJobs.map(job => <Job
+                        key={job.id}
+                        job={job}
+                    ></Job>)
+                }
             </div>
         </div>
     );
