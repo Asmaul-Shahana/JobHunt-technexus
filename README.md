@@ -1,6 +1,6 @@
 # TechNexus
 
-### Live site: 
+### Live site: https://curious-cat-82f8c7.netlify.app/
 
 ## Features
 
