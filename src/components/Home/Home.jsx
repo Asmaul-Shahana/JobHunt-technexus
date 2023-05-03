@@ -12,7 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <Category></Category>
             <Featured
-            featuredJobs={featuredJobs}></Featured>
+            ></Featured>
         </div>
     );
 };

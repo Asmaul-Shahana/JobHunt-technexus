@@ -2,11 +2,7 @@
 
 ### Live site: 
 
----
-
 ## Features
-
----
 
 + View and select from many jobs
 + View details of each job
@@ -17,8 +13,6 @@
 + Filter out onsite and remote job
 
 ## Technologies Used
-
----
 
  + React JS
  + Tailwind CSS

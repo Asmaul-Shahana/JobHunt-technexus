@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import FeaturedJob from '../FeaturedJob/FeaturedJob';
 
-const Featured = ({featuredJobs}) => {
+const Featured = () => {
+    const featuredJobs = useLoaderData();
 
+    // console.log(featuredJobs);
     const [numFeaturedJobs, setNumFeaturedJobs] = useState(4);
 
     const featuredJobList = featuredJobs.slice(0, numFeaturedJobs); 
